@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "ai-system-nesture"
+main = "src/index.ts"
+compatibility_date = "2024-09-03"
+compatibility_flags = ["nodejs_compat"]
+
+# Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
+# Docs:
+# - https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+# Note: Use secrets to store sensitive data.
+# - https://developers.cloudflare.com/workers/configuration/secrets/
+[vars]
+GOOGLE_GEMINI_API_KEY = "AIzaSyBj0PpGp33sqJUDZ0U1pP19SNc2jlY2_p8"
+CLOUDFLARE_ACCOUNT_ID = "28d6cb9bde6aae6944e20f5d421897cb"
+CLOUDFLARE_AI_GATEWAY_NAME = "ai_system_nesture"
